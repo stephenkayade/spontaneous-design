@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#showcase{
+    background: url(../img/technology-3068617.jpg)no-repeat center center/cover;
+    display: flex;
+    padding: 23rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+.first{
+    padding: 2rem;
+}
+
+#p-1{
+    padding-top: 1rem;
+}
+.brown{
+    background-color: #926239;
+}
+.btn{
+    padding: 15px;
+    border: 1px solid #926239;
+    border-radius: 10px;
+}
+p{
+    padding:  1rem;
+}
+a{
+    text-decoration: none;
+}
+.font{
+    font-size: 15px;
+}

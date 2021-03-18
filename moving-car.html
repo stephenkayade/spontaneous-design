@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .face {
+        background: rgba(197, 154, 93, 0.582);
+        height: 100px;
+        width: 80px;
+        position: relative;
+        
+        border-radius: 26px 34px 35px / 27% 35% 35%;
+    }
+
+    .eye-1 {
+        height: 8px;
+        width: 14px;
+        border-top-left-radius: 70%;
+        border-top-right-radius: 70%;
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        animation: blink 3s infinite;
+        transition: all 0.15s;
+    }
+
+    .eye-2 {
+        position: absolute;
+        height: 8px;
+        width: 14px;
+        border-top-left-radius: 70%;
+        border-top-right-radius: 70%;
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        /* border-radius: 50%; */
+        top: 30px;
+        right: 15px;
+        animation: blink 3s infinite;
+        transition: all 0.15s;
+
+    }
+
+    @keyframes blink {
+
+        0%,
+        90%,
+        100% {
+            height: 10px;
+        }
+
+        95% {
+            height: 0px;
+        }
+    }
+
+
+
+    .mouth {
+        position: absolute;
+        left: 25%;
+        bottom: 30px;
+        width: 40px;
+        height: 10px;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 10%;
+        /* animation: mouth 3s linear infinite; */
+        transition: width 0.10s;
+    }
+
+    .teeth-1 {
+        position: absolute;
+        top: 0;
+        height: 3px;
+        width: 3px;
+    }
+    .teeth-2 {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        height: 3px;
+        width: 3px;
+    }
+    .teeth-3 {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        height: 3px;
+        width: 3px;
+    }
+    .teeth-4 {
+        position: absolute;
+        top: 0;
+        left: 24px;
+        height: 3px;
+        width: 3px;
+    }
+    @keyframes mouth {
+        0%,
+        90%,
+        100% {
+            height: 5px;
+            width: 20px;
+        }
+
+        95% {
+            height: 0px;
+        }
+    }
+
+    .hair {
+       
+        margin-bottom: 2rem;
+        height: 30px;
+        border-radius: 90% 20% 47% 53% / 25% 0% 100% 64%;
+    }
+
+    .brow {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+    }
+
+    .tongue {
+        height: 4px;
+        border-top-left-radius: 80%;
+        border-top-right-radius: 80%;
+        width: 15px;
+    }
+    .mustarche {
+        bottom: -6px;
+        position: absolute;
+        height: 4px;
+        width: 5px;
+    }
+    
+</style>
+
+<body>
+    <div class="face">
+        <div class="hair bg-dark"></div>
+        <div class="eye-1 bg-white d-flex justify-content-center align-items-center">
+            <div class="brow bg-dark"></div>
+        </div>
+        <div class="eye-2 bg-white d-flex justify-content-center align-items-center">
+            <div class="brow bg-dark"></div>
+        </div>
+        <div class="mouth bg-secondary d-flex justify-content-center align-items-end">
+            <div class="teeth-1 bg-white"></div>
+            <div class="mustarche bg-dark"></div>
+            <div class="teeth-2 bg-white"></div>
+            <div class="teeth-3 bg-white"></div>
+            <div class="teeth-4 bg-white"></div>
+            <div class="tongue bg-danger"></div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

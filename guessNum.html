@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<style>
+    .guess-screen {
+        height: 200px;
+        background: #d2d2d2;
+    }
+
+    .guess-screen p {
+        font-size: 34px;
+    }
+
+    button {
+        background:rgb(255, 252, 252);
+        outline: none;
+        border: none;
+        border: 2px solid #111 ;
+    }
+
+    button:hover {
+        background: #111;
+        color: #fff;
+        transition: border 0.3s ease-in-out, background 0.9s ease-in-out, color 0.7s ease-in-out;
+    }
+
+    
+
+
+   
+</style>
+<body>
+    <div class="bg-dark p-3 text-center">
+        <h1 class="display-4 text-capitalize text-white">Guess the correct number</h1>
+    </div>
+
+    <div class="guess-screen my-4 container d-flex justify-content-center align-items-center rounded-3 w-50 shadow-sm ">
+        <p class="text-center text-dark" id="guessResult"></p>
+    </div>
+
+    <div class="user container-fluid d-flex align-items-center justify-content-center">
+        <h2  class="getUser  mr-5">Enter your guess</h2>
+        <input type="text" class="ml-5" id="userinput">
+    </div>
+    <div class="button container d-flex justify-content-center align-items-center">
+
+        <button  type="submit" class="px-3 py-1 " onclick="check()">submit</button>
+    </div>
+    
+    <script>
+        var Userinput = document.getElementById('userinput');
+        var result = document.getElementById('guessResult');
+
+
+        var computer = Math.floor(Math.random() * 10) + 1;
+        // var computer =2
+        function check () {
+            if (Userinput.value == computer) {
+                result.innerHTML = "correct"
+            } else {
+                result.innerHTML = "incorrect"
+                result.remove
+            }
+        }
+        
+    </script>
+</body>
+</html>

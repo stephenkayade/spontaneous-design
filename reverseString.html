@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    input {
+        font-size: 22px;
+    }
+
+    button {
+        background: #99996b;
+        border: none;
+        outline: none;
+    }
+
+    .reverse-screen {
+        height: 200px;
+        background: #d2d2d2;
+    }
+
+    .user {
+        height: 50vh;
+    }
+</style>
+<body>
+    <div class="bg-dark p-3 text-center">
+        <h1 class="display-4 text-capitalize text-white">Enter text to reverse</h1>
+    </div>
+
+    <div class="user container-fluid d-flex flex-column align-items-center justify-content-center">
+        <input id="getUserString" type="text" class="my-5 w-25 p-3" id="userinput">
+        <button class="text-white py-2 px-3" onclick="change()">Reverse</button>
+    </div>
+    <h2 class="display-4 fw-normal text-lightdark text-center">Reversed string</h2>
+    <div class="container d-flex w-50 justify-content-center align-items-center reverse-screen">
+        <p id="kick" class="text-secondary"></p>
+    </div>
+
+
+    <script>
+
+        var userString = document.getElementById('getUserString').value;
+        var kick = document.getElementById('kick')
+        var rev = userString.split("").reverse().join("")
+
+        // console.log(typeof userString)
+
+        function change () {
+            
+            kick.innerHTML= rev;
+        }
+    </script>
+
+</body>
+</html>

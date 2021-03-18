@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color:#d44084 ;
+    margin: 0 2.5rem;
+}
+#head{
+    display: flex;
+    padding-top: 4.5rem;
+    font-weight: bolder;
+}
+.space{
+    margin-bottom: 2rem;
+    padding: 4rem;
+}
+.yellow{
+    background-color: #ffc600;
+}
+div{
+    text-align: center;
+    margin: 0 0.4rem;
+}
+#section1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    font-weight: bolder;
+    background-image: url(../img/AndrePhillip-0785-X3.jpg)no-repeat center center/cover;
+}
+#left{
+    background-image: url('../img/texture-2694538.jpg');
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 4rem 0;
+    height: 400px;
+    width: 70%;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* margin: 2rem; */
+    height: 100%;
+    width: 30%;
+
+    /* padding-top: 2rem; */
+}
+#left > p{
+    margin-bottom: 2rem;
+}
+#top{
+    background-image: url('../img/beach.jpg');
+    height: 185px;
+}
+#section2{
+    display: flex;
+    justify-content: space-between;
+    /* height: 100px; */
+    align-content: center;
+}
+.enjoy{
+    background-image: url('../img/technology-3068617.jpg');
+    height: 150px;
+}
